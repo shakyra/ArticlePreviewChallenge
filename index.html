@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-<script src="https://kit.fontawesome.com/629573c356.js" crossorigin="anonymous"></script>
+</script>
 
   <title>Frontend Mentor | Article preview component</title>
 
@@ -19,31 +18,58 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
+
   <div class="body-content">
     <img class="drawers-img" src="images/drawers.jpg" alt="decorative plant atop a green dresser">
     <div class="body-text">
-    <p class="beginning-text">
-    Shift the overall look and feel by adding these wonderful
-    touches to furniture in your home
-    </p>
-    Ever been in a room and felt like something was missing? Perhaps
-    it felt slightly bare and uninviting. I’ve got some simple tips
-    to help you make any room feel complete.
-
-    <div class="author-info">
-    <img class="avatar-michelle" src="images/avatar-michelle.jpg" alt-"small avatar icon of Michelle">
-    <p class="author-name">Michelle Appleton
-    <br id="date">28 Jun 2020</p>
+      <p class="beginning-text">
+      Shift the overall look and feel by adding these wonderful
+      touches to furniture in your home
+      </p>
+      Ever been in a room and felt like something was missing? Perhaps
+      it felt slightly bare and uninviting. I’ve got some simple tips
+      to help you make any room feel complete.
     </div>
 
-    <i class="fas fa-share fa"></i>
-  </div>
+      <div class="author-info">
+        <img class="avatar-michelle" src="images/avatar-michelle.jpg" alt-"small avatar icon of Michelle">
+        <p class="author-name">Michelle Appleton</p>
+        <p class="date">28 Jun 2020</p>
+      </div>
+
+      <img class="share-icon" onclick="toggleSocialMediaIcons()" src="images/icon-share.svg" alt="social media share icon">
+
+      <div id="social-icons">
+        <span style="color: hsl(212, 23%, 69%)">SHARE</span>
+        <a href="https://www.facebook.com">
+          <img class="facebook-icon" src="images/icon-facebook.svg" alt="facebook icon">
+        </a>
+        <a href="https://www.pinterest.com">
+          <img class="pinterest-icon" src="images/icon-pinterest.svg" alt="pinterest icon">
+        </a>
+        <a href="https://www.twitter.com">
+          <img class="twitter-icon" src="images/icon-twitter.svg" alt="twitter icon">
+        </a>
+      </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/shakyra">Shakyra</a>.
   </div>
+
+  <script>
+    function toggleSocialMediaIcons() {
+      var x = document.getElementById("social-icons");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+            x.style.display =
+            "block";
+        }
+    }
+  </script>
 </body>
 </html>
