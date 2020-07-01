@@ -107,7 +107,7 @@ time {
 
   .article-container {
     flex-direction: column;
-    min-width: 425px;
+    min-width: 400px;
   }
 
   .image-column {
@@ -115,7 +115,7 @@ time {
   }
 
   .image-column img {
-    height: 75%;
+    /* height: 75%; */
     width: 100%;
   }
 
