@@ -99,10 +99,6 @@ time {
 
 
 @media only screen and (max-width: 875px) {
-  body {
-    background-color: lightgreen;
-  }
-
   .column {
     margin: 0;
     padding: 0;
@@ -129,12 +125,5 @@ time {
 
   .text-column footer {
     flex-direction: row;
-  }
-}
-
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
   }
 }
