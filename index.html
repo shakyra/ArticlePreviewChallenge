@@ -1,75 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;700&display=swap" rel="stylesheet">
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gridpractice.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-</script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Article preview component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+    <title>Frontend Mentor | Article preview component</title>
 
-<body>
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
 
-  <div class="body-content">
-    <img class="drawers-img" src="images/drawers.jpg" alt="decorative plant atop a green dresser">
-    <div class="body-text">
-      <p class="beginning-text">
-      Shift the overall look and feel by adding these wonderful
-      touches to furniture in your home
-      </p>
-      Ever been in a room and felt like something was missing? Perhaps
-      it felt slightly bare and uninviting. I’ve got some simple tips
-      to help you make any room feel complete.
+  <body>
+    <article class="article-container">
+      <div class="column image-column">
+        <img src="images/drawers.jpg" alt="decorative plant atop a green dresser">
+      </div>
+
+      <div class="column text-column">
+          <header style="border: 1px solid black;">
+            <h1 style="border: 1px solid black;">
+              Shift the overall look and feel by adding these wonderful
+              touches to furniture in your home
+            </h1>
+          </header>
+          <p style="border: 1px solid black;">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+          </p>
+
+          <footer>
+            <div class="author-info">
+              <img src="images/avatar-michelle.jpg" alt-"small avatar icon of Michelle">
+              <div style="border: 1px solid black;">
+                <h3>Michelle Appleton</h3>
+                <time datetime="2020-06-28 20:00">28 Jun 2020</time>
+              </div>
+            </div>
+
+            <img class="share-icon" onclick="toggleSocialMediaIcons()" src="images/icon-share.svg" alt="social media share icon">
+
+          <div id="social-icons" style="display:none;">
+            <span>SHARE</span>
+            <a href="https://www.facebook.com">
+              <img class="facebook-icon social-logos" src="images/icon-facebook.svg" alt="facebook icon">
+            </a>
+            <a href="https://www.pinterest.com">
+              <img class="pinterest-icon social-logos" src="images/icon-pinterest.svg" alt="pinterest icon">
+            </a>
+            <a href="https://www.twitter.com">
+              <img class="twitter-icon social-logos" src="images/icon-twitter.svg" alt="twitter icon">
+            </a>
+          </div>
+        </footer>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/shakyra">Shakyra</a>.
     </div>
 
-        <img class="avatar-michelle" src="images/avatar-michelle.jpg" alt-"small avatar icon of Michelle">
-      <div class="author-info">
-        <p class="author-name">Michelle Appleton</p>
-        <p class="date">28 Jun 2020</p>
-      </div>
-
-      <img class="share-icon" onclick="toggleSocialMediaIcons()" src="images/icon-share.svg" alt="social media share icon">
-
-      <div id="social-icons">
-        <span>SHARE</span>
-        <a href="https://www.facebook.com">
-          <img class="facebook-icon social-logos" src="images/icon-facebook.svg" alt="facebook icon">
-        </a>
-        <a href="https://www.pinterest.com">
-          <img class="pinterest-icon social-logos" src="images/icon-pinterest.svg" alt="pinterest icon">
-        </a>
-        <a href="https://www.twitter.com">
-          <img class="twitter-icon social-logos" src="images/icon-twitter.svg" alt="twitter icon">
-        </a>
-      </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/shakyra">Shakyra</a>.
-  </div>
-
-  <script>
-    function toggleSocialMediaIcons() {
-      var x = document.getElementById("social-icons");
-      if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-            x.style.display =
-            "block";
-        }
-    }
-  </script>
-</body>
+    <script>
+      function toggleSocialMediaIcons() {
+        var x = document.getElementById("social-icons");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+              x.style.display = "block";
+          }
+      }
+    </script>
+  </body>
 </html>
