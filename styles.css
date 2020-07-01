@@ -22,8 +22,10 @@ time {
   box-shadow: 0px 0px 1px #888;
   font-weight: 500;
   max-width: 75%;
+  min-width: 875px;
   flex: 0 0 1000px;
   margin: auto;
+  text-style: justify;
 }
 
 .column {
@@ -42,8 +44,7 @@ time {
 }
 
 .text-column {
-  padding: 3em 3em;
-  min-width: inherit;
+  padding: 5em 3em;
 }
 
 .text-column footer {
@@ -106,6 +107,7 @@ time {
 
   .article-container {
     flex-direction: column;
+    min-width: 500px;
   }
 
   .image-column {
@@ -121,6 +123,11 @@ time {
     height: 100%;
     width: 100%;
     padding: 0 1em;
+  }
+
+  .text-column h1 {
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .text-column footer {
