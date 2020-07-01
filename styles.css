@@ -42,7 +42,6 @@ time {
 }
 
 .text-column {
-  border: 1px solid black;
   padding: 3em 3em;
   min-width: inherit;
 }
@@ -53,7 +52,6 @@ time {
   align-items: center;
   width: 100%;
   height: auto;
-  border: 1px solid blue;
 }
 
 .text-column h1 {
@@ -63,7 +61,6 @@ time {
 
 .author-info {
   display: flex;
-  border: 1px solid red;
 }
 
 .author-info div {
@@ -74,7 +71,6 @@ time {
 }
 
 .author-info h3 {
-  border: 1px solid black;
   margin: 0;
 }
 
@@ -102,9 +98,14 @@ time {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 875px) {
   body {
     background-color: lightgreen;
+  }
+
+  .column {
+    margin: 0;
+    padding: 0;
   }
 
   .article-container {
