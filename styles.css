@@ -44,7 +44,7 @@ time {
 .text-column {
   border: 1px solid black;
   padding: 3em 3em;
-  height: 100%;
+  min-width: inherit;
 }
 
 .text-column footer {
@@ -89,12 +89,11 @@ time {
 .share-icon {
   color: hsl(214, 17%, 51%);
   background-color: hsl(210, 46%, 95%);
-  width: 20px;
-  height: 17px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   margin-right: 1em;
-  padding: 6.5px;
-  font-size: 0.73em;
+  padding: 5px;
 }
 
 #social-icons {
