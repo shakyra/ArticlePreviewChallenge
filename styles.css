@@ -25,7 +25,6 @@ time {
   min-width: 875px;
   flex: 0 0 1000px;
   margin: auto;
-  text-style: justify;
 }
 
 .column {
@@ -44,7 +43,7 @@ time {
 }
 
 .text-column {
-  padding: 5em 3em;
+  padding: 3em;
 }
 
 .text-column footer {
@@ -96,6 +95,15 @@ time {
 #social-icons {
   color: hsl(210, 46%, 95%);
   background-color: hsl(217, 19%, 35%);
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  right: 13%;
+  bottom: 68%;
+}
+
+.social-logos {
+  padding: 2.5px;
 }
 
 
@@ -111,11 +119,12 @@ time {
   }
 
   .image-column {
+    height: 300px;
     flex-basis: auto;
   }
 
   .image-column img {
-    /* height: 75%; */
+    height: 100%;
     width: 100%;
   }
 
@@ -131,6 +140,7 @@ time {
   }
 
   .text-column footer {
+    padding-bottom: 1em;
     flex-direction: row;
   }
 }
